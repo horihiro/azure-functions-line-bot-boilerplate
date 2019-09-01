@@ -1,0 +1,16 @@
+{
+	"events": [
+		{
+			replyToken: '00000000000000000000000000000000',
+			source: {
+				userId: TEST_USER_ID 
+			}
+		},
+		{
+			replyToken: 'ffffffffffffffffffffffffffffffff',
+			source: {
+				userId: TEST_USER_ID 
+			}
+		}
+	]
+}

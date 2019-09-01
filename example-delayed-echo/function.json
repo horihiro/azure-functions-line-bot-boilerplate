@@ -1,0 +1,34 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "name": "sessionInput",
+      "path": "exampledelayedecho-sessioncontainer/{source.userId}.json",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "sessionOutput",
+      "path": "exampledelayedecho-sessioncontainer/{source.userId}.json",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "../dist/example-delayed-echo/index.js"
+}
