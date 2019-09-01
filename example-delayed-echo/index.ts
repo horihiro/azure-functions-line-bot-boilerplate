@@ -2,8 +2,8 @@ import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 import { Client } from "@line/bot-sdk";
 
 const client: Client = new Client({
-  channelSecret: 'f995f4de21bf71632688cd24c8ba1e68',
-  channelAccessToken: 'J+OcmBZWP0ov5gPsqJbQEvUDqTcsy1qptH1bh5uioVRlpjFKhw6HnarE7XxYCj1lI3r2435aXYNp2HZgbczbipEiF9eNs06klZ0SR0td4AkqO019bZsP/UoJMpQPjPpC0T+rQAyJSoCQpDfDyjGYhQdB04t89/1O/w1cDnyilFU='
+  channelSecret: '<Channel Secret>',
+  channelAccessToken: '<Channel Access Token>'
 });
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
