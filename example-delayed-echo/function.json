@@ -18,14 +18,14 @@
     {
       "type": "blob",
       "name": "sessionInput",
-      "path": "exampledelayedecho-sessioncontainer/{source.userId}.json",
+      "path": "<CONTINER_FOR_BOT>/{source.userId}.json",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
     },
     {
       "type": "blob",
       "name": "sessionOutput",
-      "path": "exampledelayedecho-sessioncontainer/{source.userId}.json",
+      "path": "<CONTINER_FOR_BOT>/{source.userId}.json",
       "connection": "AzureWebJobsStorage",
       "direction": "out"
     }
